@@ -15,7 +15,7 @@ setlocal EnableDelayedExpansion
 start %SystemRoot%\Sysnative\cmd.exe /c ""!_cmdf!" %* r1"
 exit /b
 )
-
+:: UPDATE KEYS SUPPORT V3
 :: Re-launch the script with ARM32 process if it was initiated by x64 process on ARM64 Windows
 
 if exist %SystemRoot%\SysArm32\cmd.exe if %PROCESSOR_ARCHITECTURE%==AMD64 if not defined r2 (
